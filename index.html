@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up Confirmation</title>
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 2em;
+      user-select: none;
+      overflow: hidden;
+      transition: opacity 2s ease;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  You has sign up ✅
+
+  <script>
+    // After 2 seconds, start fading out smoothly over 2 seconds
+    setTimeout(() => {
+      document.body.style.opacity = '0';
+    }, 2000);
+
+    // Optional: remove content or redirect after fade out
+    setTimeout(() => {
+      document.body.style.display = 'none';
+      // or window.location.href = "somewhere.html";
+    }, 4000);
+  </script>
+</body>
+</html>
